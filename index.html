@@ -22,8 +22,8 @@
                 <button class="tablinks" onclick="openCity(event,'blok2')"> Презентация</button>
                 <button class="tablinks" onclick="openCity(event,'blok3')"> 2 отработки возражений</button>
                 <button class="tablinks" onclick="openCity(event,'blok4')"> Назначь в график</button>
-                <!-- <button class="tablinks" onclick="openCity(event,'blok5')"> Заявки</button> -->
                 <button class="tablinks" onclick="openCity(event,'blok6')"> Полезное</button>
+                  <button id="kalk" > Калькулятор </button>
                 <button id="clock" style="color: rgb(82, 2, 241);"></button>
             </div>
         </div>
@@ -220,37 +220,39 @@
 
 </div>
 
-<div class="calculator">
+<div class="calcul">
+        <div class="calculator">
 
-    <input type="text" class="screen" id="screen" placeholder="0">
+            <input type="text" class="screen" id="screen" placeholder="0">
 
-    <button class="symbol" onclick="wipe()">AC</button>
-    <button class="symbol" onclick="wipe()">C</button>
-    <button class="symbol" onclick="show('.')"><b>.</b></button>
-    <button class="symbol" onclick="show('+')">+</button>
+            <button class="symbol" onclick="wipe()">AC</button>
+            <button class="symbol" onclick="wipe()">C</button>
+            <button class="symbol" onclick="show('.')"><b>.</b></button>
+            <button class="symbol" onclick="show('+')">+</button>
 
-    <button class="number" onclick="show('7')">7</button>
-    <button class="number" onclick="show('8')">8</button>
-    <button class="number" onclick="show('9')">9</button>
-    <button class="symbol" onclick="show(' -')"> <b>-</b></button>
+            <button class="number" onclick="show('7')">7</button>
+            <button class="number" onclick="show('8')">8</button>
+            <button class="number" onclick="show('9')">9</button>
+            <button class="symbol" onclick="show(' -')"> <b>-</b></button>
 
-    <button class="number" onclick="show('4')">4</button>
-    <button class="number" onclick="show('5')">5</button>
-    <button class="number" onclick="show('6')">6</button>
-    <button class="symbol" onclick="show('*')">*</button>
-  
-    <button class="number" onclick="show('1')">1</button>
-    <button class="number" onclick="show('2')">2</button>
-    <button class="number" onclick="show('3')">3</button>
-    <button class="symbol" onclick="show('/')">/</button>
+            <button class="number" onclick="show('4')">4</button>
+            <button class="number" onclick="show('5')">5</button>
+            <button class="number" onclick="show('6')">6</button>
+            <button class="symbol" onclick="show('*')">*</button>
+        
+            <button class="number" onclick="show('1')">1</button>
+            <button class="number" onclick="show('2')">2</button>
+            <button class="number" onclick="show('3')">3</button>
+            <button class="symbol" onclick="show('/')">/</button>
 
 
-    <button class="number" onclick="show('(')">(</button>
-    <button class="number" onclick="show('0')">0</button>
-    <button class="number" onclick="show(')')">)</button>
-    <button class="symbol" onclick="calc('=')">=</button>
+            <button class="number" onclick="show('(')">(</button>
+            <button class="number" onclick="show('0')">0</button>
+            <button class="number" onclick="show(')')">)</button>
+            <button class="symbol" onclick="calc('=')">=</button>
 
-</div>
+        </div>
+    </div>
 <script src="calc.js"></script>
 
 <script>
@@ -335,6 +337,18 @@ let s;
       popup.classList.toggle("show");
     }
     </script>
+
+<script>
+let kalk1 = document.querySelector('.calcul ')
+ let kalk = document.getElementById('kalk')
+ kalk.addEventListener('click', e => {
+      if (kalk1.style.display == "none"){
+        kalk1.style.display = "block";
+	  } else {
+	 kalk1.style.display = "none"}
+    }
+ )
+</script>
 <script src="calc.js"></script>
 <script src="nacleyka.js"></script>    
 </body>
