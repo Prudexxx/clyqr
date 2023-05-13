@@ -20,6 +20,11 @@ button:focus {
     outline: none;
 }
 
+.calcul{
+    display: none
+    ;
+}
+
 .calculator {
     
 
