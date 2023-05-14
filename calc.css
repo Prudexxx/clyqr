@@ -20,9 +20,6 @@ button:focus {
     outline: none;
 }
 
-.calcul{
-    display: none;
-}
 
 .calculator {
     
@@ -85,3 +82,8 @@ button:focus {
 .number:hover {
     background: #333849ac;
 }
+
+.calcul{
+    display: none;
+}
+
