@@ -31,11 +31,27 @@
         <!-- скрытые листы -->
         
             <div class="tabcontent" id="blok6">
+		    
             <a  href="ttk.html"><button style="border: 1px solid #000;">клиент партнера(ТТК)</button></a>
             <a  href="router.html"><button style="border: 1px solid #000;">Заказать роутер</button></a>
             <button style="border: 1px solid #000;" id="myBtn">Дом не подключен</button>
             <a  href="http://dcc/Report/Show/30827" target="_blank" id="but"> <button style="border: 1px solid #000;" class="butt">Дашборд </button></a>
         
+              <button style="border: 1px solid #000;" id="myBtn1">Цикличность</button>
+              
+                <div id="myModal1" class="modal">
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Я понимаю Вашу ситуацию и очень хочу помочь в решении… <br>
+                        
+                    Мне очень жаль, что вы столкнулись с данной ситуацией…
+                    <br>
+                    Я делаю все возможное для решения Вашего вопроса… <br>
+                    &ensp;&ensp;  Имя Клиента, понимаю, как для Вас важно решить данный вопрос, именно поэтому Вы можете воспользоваться вариантом(ами), который(ые) я предложил(а). Решение вопроса возможно только таким образом. Подскажите, у Вас остались другие вопросы? Если вопросов не осталось, я буду вынужден(а) принять следующий звонок. <br>
+                    &ensp;&ensp; Имя Клиента, я предоставил(а) Вам все варианты решения вопроса. Так как других вопросов у Вас нет, я вынужден(а) принять следующий звонок. Всего хорошего!</p>
+                    </div>
+              </div>
+            
             <button style="border: 1px solid #000;" class="popup" onclick="myFunction()">Документы для подкл!
                 <span class="popuptext" id="myPopup">Для иностранных граждан в соответствии с Федеральным законом «О правовом положении иностранных граждан в Российской Федерации» от 25.07.2002 г. № 115-ФЗ документом, удостоверяющим личность, является:
                     <br>
@@ -70,6 +86,7 @@
                 
                 </p></p>
             </div>
+	    
            <div class="modal-content">
             <span class="close">&times;</span>
             <p         <p>&ensp;&ensp;
@@ -92,6 +109,7 @@
             </p></p>
         </div>
             </div>
+	
     
         </div>
 
@@ -350,6 +368,35 @@ let kalk1 = document.querySelector('.calcul ')
 	 kalk.textContent = 'Калькулятор'}
     }
  )
+	
+	
+	<script>
+    // Получить модальный
+var modal1 = document.getElementById("myModal1");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn1");
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal1.style.display = "none";
+  }
+}
+</script>
 </script>
 <script src="calc.js"></script>
 <script src="nacleyka.js"></script>    
