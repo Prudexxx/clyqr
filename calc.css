@@ -51,7 +51,7 @@ button:focus {
 }
 
 ::placeholder {
-    color: #fff;
+ color: black;
 }
 
 .symbol,
